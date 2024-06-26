@@ -1,1 +1,22 @@
 /*  your css code here. If applicable */
+#container {
+    margin: 20px;
+    position: relative;
+}
+
+#container::before,
+#container::after {
+    content: "Special Text";
+    color: #f00;
+    font-size: 20px;
+}
+
+#container::before {
+    content: 'Before Element';
+    left: -110px;
+}
+
+#container::after {
+    content: 'After Element';
+    right: -110px;
+}
